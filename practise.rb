@@ -7,7 +7,7 @@ def createInvertedPyramid(rows)
     rescue => exception
         puts exception
     ensure
-        puts "thank you"
+        puts "thank you" 
     end  
 end
 
