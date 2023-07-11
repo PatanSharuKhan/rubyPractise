@@ -51,3 +51,9 @@ puts Utility.alphaCount "sharukhan patan"
 
 # remove spaces 
 puts Utility.removeSpaces "sharukhan patan"
+
+# print pyramid
+Utility.pyramid "*",5
+
+# print inverted pyramid
+Utility.invertedPyramid "*",5

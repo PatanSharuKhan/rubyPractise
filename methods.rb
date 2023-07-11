@@ -121,4 +121,22 @@ module Utility
         end
         return str
     end
+
+    def Utility.pyramid(ch,rows)
+        for row in (1..rows)
+            space=" "*(rows-row)
+            stars="#{ch} "*row
+            pattern=space+stars
+            puts pattern
+        end
+    end
+
+    def Utility.invertedPyramid(ch,rows)
+        for row in (0...rows)
+            space=" "*row
+            stars="#{ch} "*(rows-row)
+            pattern=space+stars
+            puts pattern
+        end
+    end
 end
