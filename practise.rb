@@ -8,6 +8,7 @@ def createInvertedPyramid(rows)
         puts exception
     ensure
         puts "thank you" 
+        puts "very thank you"
     end  
 end
 
