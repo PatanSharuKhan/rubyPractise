@@ -57,3 +57,21 @@ Utility.pyramid "*",5
 
 # print inverted pyramid
 Utility.invertedPyramid "*",5
+
+# sum of digits
+puts Utility.sumDigits 2323
+
+# isPrime number
+puts Utility.isPrime 6
+
+# print tables
+Utility.printTables 2,10
+
+# print square
+puts Utility.getSquare 3
+
+# print cubes
+puts Utility.getCubes 4
+
+# get square root
+puts Utility.getSqrt 4

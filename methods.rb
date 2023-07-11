@@ -139,4 +139,43 @@ module Utility
             puts pattern
         end
     end
+
+    def Utility.sumDigits(num)
+        num=num.to_s
+        sums=0
+        for each in num.split("")
+            sums+=(each.to_i)
+        end
+        return sums
+    end
+
+    def Utility.isPrime(num)
+        facts=0
+        for each in (1..num)
+            if num%each==0
+                facts+=1
+            end
+        end
+        return facts==2
+    end
+
+    def Utility.printTables(a,b)
+        for num in (a..b)
+            for i in (1..10)
+                puts "#{num} x #{i} = #{num*i}"
+            end
+        end
+    end
+
+    def Utility.getSquare(num)
+        return num**2
+    end
+
+    def Utility.getCubes(num)
+        return num**3
+    end
+
+    def Utility.getSqrt(num)
+        return num**0.5
+    end
 end
