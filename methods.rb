@@ -80,5 +80,45 @@ module Utility
     end
 
     def Utility.getVowels(word)
+        word=word.downcase
+        count=0
+        for each in word.split("")
+            if each=="a" or each=="e" or each=="i" or each=="o" or each=="u"
+                count+=1
+            end
+        end
+        return count
+    end
+
+    def Utility.getConsonents(word)
+        word=word.downcase
+        count=0
+        for each in word.split("")
+            if each!="a" and each!="e" and each!="i" and each!="o" and each!="u"
+                count+=1
+            end
+        end
+        return count
+    end
+
+    def Utility.alphaCount(word)
+        word=word.downcase
+        count=0
+        for each in word.split("")
+            if each.ord>=97 and each.ord<=122
+                count+=1
+            end
+        end
+        return count
+    end
+
+    def Utility.removeSpaces(word)
+        str=""
+        for each in word.split("")
+            if each!=" "
+                str+=each
+            end
+        end
+        return str
     end
 end
